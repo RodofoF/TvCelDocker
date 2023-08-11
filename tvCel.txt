@@ -1,0 +1,4 @@
+
+ffmpeg  -stream_loop -1 -re -i tvCelLoop.mp4 -c:v libx264 -c:a aac -mpegts_original_network_id 1 -mpegts_transport_stream_id 1 -mpegts_service_id 1 -mpegts_pmt_start_pid 4096 -streamid 0:289 -streamid 1:337 -metadata service_provider="SPEEDCAST" -metadata service_name="TV CEL" -mpegts_service_type 0x11 -f mpegts udp://233.0.1.80:5555?pkt_size=1316
+ffmpeg  -stream_loop -1 -re -i tvCelLoop.mp4 -c:v copy -c:a copy -f mpegts udp://233.0.1.80:5555?pkt_size=1316
+ffmpeg  -stream_loop -1 -re -i tvCelLoop.mp4 -c:v libx264 -c:a aac -f flv rtmp://127.0.0.1:1935/live/tvcel?pkt_size=1316
