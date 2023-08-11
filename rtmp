@@ -17,7 +17,7 @@ server {
     }
 }
 server {
-    listen 8088;
+    listen 8090;
 
     location / {
         add_header Access-Control-Allow-Origin *;

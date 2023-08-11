@@ -7,8 +7,8 @@
 * docker images
 
 ### Rodar imagem docker
-* docker run -d -p 80:80 -p 443:443 -p 8088:8088 -p 1935:1935 {image.id}
-* docker run -d -p 80:80 -p 443:443 -p 8088:8088 -p 1935:1935 252a28f4abbb
+* docker run -d -p 80:80 -p 443:443 -p 8090:8090 -p 1935:1935 {image.id}
+* docker run -d -p 80:80 -p 443:443 -p 8090:8090 -p 1935:1935 252a28f4abbb
 
 ### Vizualisar containers
 * docker ps
