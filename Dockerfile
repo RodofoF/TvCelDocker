@@ -17,6 +17,6 @@ COPY pass.txt /etc/nginx/pass.txt
 COPY rtmp /etc/nginx/sites-available/rtmp
 RUN chmod +x /home/tvcel/tvCelRtmp.sh
 RUN chmod +x /home/tvcel/tvCelUdp.sh
-EXPOSE 80 443 1935 8088
+EXPOSE 80 443 1940 8090
 CMD ["nginx", "-g", "daemon off;"]
 
