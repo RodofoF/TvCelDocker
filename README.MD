@@ -9,10 +9,13 @@
 ## Vizualisar imagens
 * docker images
 
+## Remover imagens
+* docker rmi {imagem id}
+
 ### Rodar imagem docker
 * docker run -d -p 80:80 -p 443:443 -p 8090:8090 -p 1935:1935 {image.id}
 * docker run -d -p 8090:8090 -p 1940:1940 252a28f4abbb
-* docker run -d --network operacional --ip 192.168.111.193 -p 8090:8090 -p 1940:1940 252a28f4abbb
+* docker run -d --network bridge --ip 192.168.0.58 -p 8090:8090 -p 1940:1940 5a9a88b54dd8
 
 
 ### Vizualisar containers
@@ -20,7 +23,7 @@
 
 ### Terminal no container que estou usando
 * docker exec -it {containerId} /bin/bash
-* docker exec -it 90439ff58098 /bin/bash
+* docker exec -it eb0ce581e08a /bin/bash
 
 ### Inspecionar container
 * docker inspect {containerId}
