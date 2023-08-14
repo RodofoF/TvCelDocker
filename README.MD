@@ -21,6 +21,9 @@
 ### Vizualisar containers
 * docker ps
 
+### Remover container
+* docker rm {container.id}
+
 ### Terminal no container que estou usando
 * docker exec -it {containerId} /bin/bash
 * docker exec -it eb0ce581e08a /bin/bash

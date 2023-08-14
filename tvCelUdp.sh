@@ -1,7 +1,7 @@
 #!/bin/bash
 log_file="./Logs/tvCel.txt"
-inputStream="tvCelLoop.mp4"
-outputStream="udp://233.0.1.80:5555?pkt_size=1316"
+inputStream="speedcastLoop.mp4"
+outputStream="udp://233.0.1.81:5555?pkt_size=1316"
 streamName="TV Cel"
 
 function tvCel (){
